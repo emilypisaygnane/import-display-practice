@@ -1,8 +1,21 @@
-// import functions and grab DOM elements
+import { candy } from './candies-data.js';
+import { cats } from './cats-data.js';
 
-// initialize global state
+import { renderCandyItem } from './render-candy.js';
+import { renderCat } from './render-cats.js';
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+const candyListEl = document.getElementById('candy-list');
+
+for (let item of candy) {
+    const candyEl = renderCandyItem(item);
+
+    candyListEl.append(candyEl);
+}
+
+const catListEl = document.getElementById('cats-list');
+
+for (let aParticularCat of cats) {
+    const catEl = renderCat(aParticularCat);
+
+    catListEl.append(catEl);
+}

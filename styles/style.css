@@ -95,4 +95,11 @@ footer {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 
-  }
+}
+#candy-list {
+    display: flex;
+}
+
+#people-list {
+    display: flex;
+}
