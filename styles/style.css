@@ -120,3 +120,14 @@ footer {
     text-align: center;
     margin: 2px;
   }
+
+  .movies {
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
+    text-align: center;
+    display: grid;
+    background-color: rgb(164, 216, 218);
+    grid-template-rows: .5fr 1fr;
+    margin: 20px;
+    height: 200px;
+    width: 600px;
+  }

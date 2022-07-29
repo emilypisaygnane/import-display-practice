@@ -4,7 +4,7 @@ import { movies } from './movies-data.js';
 
 import { renderCandyItem } from './render-candy.js';
 import { renderCat } from './render-cats.js';
-import { renderMovie } from './render-movies.js';
+import { renderMovies } from './render-movies.js';
 
 const candyListEl = document.getElementById('candy-list');
 
@@ -22,10 +22,10 @@ for (let aParticularCat of cats) {
     catListEl.append(catEl);
 }
 
-const movieListEl = document.getElementById('movie-list');
+const moviesListEl = document.getElementById('movies-list');
 
 for (let movie of movies) {
-    const moviesEl = renderMovie(movie);
+    const moviesEl = renderMovies(movie);
 
-    movieListEl.append(moviesEl);
+    moviesListEl.append(moviesEl);
 }

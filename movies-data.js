@@ -28,7 +28,7 @@ export const movies = [
         director: 'Hayao Miyazaki',
         publication: {
             date: 'July 19 2008',
-            produced: 'Studio Ghibli'
+            production: 'Studio Ghibli'
         }
     },
 ];
