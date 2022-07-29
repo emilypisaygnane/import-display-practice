@@ -1,6 +1,7 @@
 import { candy } from './candies-data.js';
 import { cats } from './cats-data.js';
 import { movies } from './movies-data.js';
+export { music } from './music-data.js';
 
 import { renderCandyItem } from './render-candy.js';
 import { renderCat } from './render-cats.js';
