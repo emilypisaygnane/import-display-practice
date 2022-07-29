@@ -5,7 +5,7 @@ export const movies = [
         publication: {
             date: 'July 20 2001',
             production: 'Studio Ghibli'
-        },
+        }
     },
     {
         title: 'Howls Moving Castle',

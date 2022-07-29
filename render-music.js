@@ -1,4 +1,5 @@
 export function renderMusic(music) {
+    const musicEl = document.createElement('div');
     const artistEl = document.createElement('h2');
     const albumEl = document.createElement('h3');
     const genresEl = document.createElement('ul');
@@ -9,5 +10,22 @@ export function renderMusic(music) {
 
     artistEl.textContent = music.artist;
     albumEl.textContent = music.album;
-    publicationEl.textContent = `Album produced by ${music.publication.label} `
+    publicationEl.textContent = `Album produced by ${music.publication.label} and released in ${music.publication.released}. `;
+
+    for (let genre of music.genres) {
+        const genreEl = document.createElement('li');
+
+        genreEl.textContent = `${genre}`;
+
+        genresEl.append(genreEl);
+    }
+
+    musicEl.classList.add('music');
+    topEl.classList.add('top');
+
+    musicEl.append(topEl, rightEl);
+    topEl.append.add(artistEl, albumEl);
+    rightEl.append(genresEl, publicationEl);
+
+    return musicEl;
 }

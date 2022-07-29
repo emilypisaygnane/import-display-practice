@@ -9,11 +9,11 @@ export function renderMovies(movies) {
 
     titleEl.textContent = movies.title;
     directorEl.textContent = movies.director;
-    publicationEl.textContent = `Produced by ${movies.publication.production} in ${movies.publication.date}`;
+    publicationEl.textContent = `Produced by ${movies.publication.production} and released in Japan on ${movies.publication.date}`;
 
     moviesEl.classList.add('movies');
     topEl.classList.add('top');
- 
+
     moviesEl.append(topEl, rightEl);
     topEl.append(titleEl, directorEl);
     rightEl.append(publicationEl);

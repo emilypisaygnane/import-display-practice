@@ -1,11 +1,12 @@
 import { candy } from './candies-data.js';
 import { cats } from './cats-data.js';
 import { movies } from './movies-data.js';
-export { music } from './music-data.js';
+import { Music } from './music-data.js';
 
 import { renderCandyItem } from './render-candy.js';
 import { renderCat } from './render-cats.js';
 import { renderMovies } from './render-movies.js';
+import { renderMusic } from './render-music.js';
 
 const candyListEl = document.getElementById('candy-list');
 
@@ -29,4 +30,13 @@ for (let movie of movies) {
     const moviesEl = renderMovies(movie);
 
     moviesListEl.append(moviesEl);
+}
+
+const musicListEl = document.getElementById('music-list');
+
+for (let music of Music) {
+
+    const musicEl = renderMusic(music);
+
+    musicListEl.append(musicEl);
 }
