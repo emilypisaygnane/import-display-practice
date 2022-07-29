@@ -96,10 +96,27 @@ footer {
     }
 
 }
-#candy-list {
+#candy-list, #cats-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
-#people-list {
-    display: flex;
+.candy-item {
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
+    padding: 5px;
+    background-color: pink;
+    border-radius: 5px;
 }
+
+.cat {
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(247, 185, 131);
+    margin: 15px;
+  }
+
+  .cat h3, .cat p {
+    text-align: center;
+    margin: 2px;
+  }
