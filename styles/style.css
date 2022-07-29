@@ -66,7 +66,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -77,10 +77,10 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
-  @keyframes pulse {
+
+    @keyframes pulse {
     20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+        transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
 
     40% {
@@ -89,7 +89,7 @@ footer {
 
     60% {
         transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+        }
 
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
@@ -103,31 +103,43 @@ footer {
 
 .candy-item {
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
-    padding: 5px;
+    padding: 10px;
     background-color: pink;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
-.cat {
+    .cat {
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 8px;
     background-color: rgb(247, 185, 131);
-    margin: 15px;
-  }
+    margin: 5px 50px 5px 50px;
+    }
 
-  .cat h3, .cat p {
+    .cat h3, .cat p {
     text-align: center;
     margin: 2px;
-  }
+    }
 
-  .movies {
+    .movies {
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
     text-align: center;
     display: grid;
     background-color: rgb(164, 216, 218);
-    grid-template-rows: .5fr 1fr;
     margin: 20px;
     height: 200px;
     width: 600px;
-  }
+    border-radius: 10px;
+    }
+    .music {
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
+    text-align: center;
+    display: grid;
+    background-color: darkseagreen;
+    margin: 20px;
+    height: 300px;
+    width: 600px;
+    border-radius: 10px;
+    }
+
+
